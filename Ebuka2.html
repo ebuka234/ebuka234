@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--social icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Praise&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+          }
+          
+          .fa:hover {
+              opacity: 0.8;
+              
+          }
+          
+          .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+          .fa-dribbble {
+            background: #ea4c89;
+            color: white;
+          }
+          
+
+        .hero{
+            height: 800px;
+            width: 100%;
+            background-color: #1F232E;
+            display: flex;
+            justify-content: center;
+            
+        }
+    
+        header img{
+            height: 200px;
+            position: relative;
+        }
+        #ebuk{
+            height: 400px;
+            box-shadow: #ea4c89 15px 9px 20px;
+            border-radius: 20px;
+        }
+        .ebuka{
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            margin: 100px;
+        }
+        .ebuka-2{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.0rem;
+        }
+        .ebuka-2 h1{
+            font-size: 50px;
+            color: #ea4c89;
+            font-family: poppins;
+        }
+        .ebuka-2 h3{
+            font-size: 30px;
+            color:white;
+            margin-bottom: 20px;
+        }
+        .head-2{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+        }
+        #head{
+            width: 80%;
+            height: 70px;
+            display: flex;
+            justify-content:space-between;
+            background: rgba(255, 255, 255, 0.2);
+            align-items: center;
+            position: relative;
+            border-radius: 40px;
+
+        }
+        header{
+            width:100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+            
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color:#1F232E;
+            font-size: 20px;
+            font-family: poppins, sans-serif;
+        }
+        .element{
+            color: white;
+        }
+        #CV{
+            width: 110px;
+            background-color: #ea4c89;
+            height: 30px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            box-shadow: #125688 2px 6px 15px;
+        }
+        .ok{
+            height: 200px;
+            background-color: white;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: +1;
+            top: 110px;
+            display: none;
+
+            
+        }
+        .ok a{
+            color: #ea4c89;
+
+        }
+        #okay{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            display: none;
+        }
+        box-icon{
+            position: relative;
+            left: 70px;
+            display: none;
+        }
+        #log{
+        
+            height: 150px;
+            width: auto;
+            
+            position: relative;
+            z-index: +1;
+            display: none;
+        }
+
+
+
+
+
+/* section-2*/
+    .fero{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        align-items: center;
+        background-color: #1F232E;
+    }
+    #ebu{
+        height: 400px;
+        border-radius: 10px 90px 10px 90px;
+        box-shadow: 2px 20px 19px;
+        position: relative;
+        margin-left: 20px;
+        
+    }
+    .fero-2{
+        height:auto;
+        width: 40%;
+        flex-direction: column;
+        display: flex;
+        gap: 0.7rem;
+        
+    }
+    .fero-2 h1{
+        font-size: 40px;
+        color: #ea4c89;
+        font-family: poppins, sans-serif;
+    }
+    .fero-2 h3{
+        font-size: 20px;
+        color: white;
+    }
+    .fero-2 p{
+        color: #ea4c89;
+        font-family: poppins, sans-serif;
+    }
+
+
+
+
+
+
+    /*section-3*/
+    .mero{
+        height: 700px;
+        width: 100%;
+        background-color: #1F232E;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .mero-2{
+        height: 300px;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.2);
+        text-align: center;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    .mero h1{
+        font-family: poppins,sans-serif;
+        font-size: 50px;
+    }
+    .mero span{
+        color: #ea4c89;
+    }
+    .mero-2 p{
+        font-size: 15px;
+        margin: auto;
+        width: 90%;
+    }
+    .mero-2 button{
+        width: 100px;
+        height: 30px;
+        background-color: #ea4c89;
+        border-radius: 20px;
+        border: 2px #ea4c89 solid;
+        
+        color:white;
+        font-family: poppins, sans-serif;
+    }
+    .mer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .mer h2{
+        font-family: poppins;
+        color: #ea4c89;
+        font-size: 25px;
+    }
+
+    .mero-2 button:hover{
+        color: #ea4c89;
+    }
+    .mero-2 img{
+        color: white;
+        
+        height: 60px;
+        width: 60px;
+    }
+    .mero-3{
+        display: flex;
+        gap: 2rem;
+    }
+    .mero a :hover{
+        color: #1F232E;
+    }
+
+
+
+
+
+
+
+    .jero{
+        height: 800px;
+        width: 100%;
+        background-color:#1F232E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    input{
+        height: 40px;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        border: 1px white solid;
+        padding: 7px;
+    }
+    
+    .jero h1{
+        color:#ea4c89;
+        font-family: poppins, sans-serif;
+        font-size: 50px;
+    }
+    .jero span{
+        color: white;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    textarea{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+    }
+    #sub{
+        background-color: #ea4c89;
+        color: white;
+        font-size: 14px;
+        font-family: poppins;
+        width: 200px;
+    }
+    
+
+
+
+    footer{
+        height: 50px;
+        width: 100%;
+        background-color:#ea4c89;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    @media screen and (max-width:1000px) {
+        .hero{
+            height: 800px;
+            width: 100%;
+            background-color: #1F232E;
+            display: flex;
+            
+            justify-content: center;
+            
+            
+        }
+    
+        header img{
+            height: 100px;
+            position: relative;
+        }
+        #ebuk{
+            height: 250px;
+            box-shadow: #ea4c89 5px 1px 10px;
+            border-radius: 20px;
+        }
+        .ebuka{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            margin: 50px;
+            top: 80px;
+        }
+        .ebuka-2{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            position: relative;
+            
+            
+        }
+        .ebuka-2 h1{
+            font-size: 30px;
+            color: #ea4c89;
+            font-family: poppins;
+        }
+        .ebuka-2 h3{
+            font-size: 20px;
+            color:white;
+            margin-bottom: 10px;
+        }
+        .head-2{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 150px;
+        }
+        #head{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content:center;
+            background: rgba(255, 255, 255, 0.0);
+            align-items: center;
+            position: relative;
+            border-radius: 40px;
+            bottom: 80px;
+            
+
+        }
+        header{
+            width:100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            display: none;
+        }
+        ul{
+            display: flex;
+            gap: 0.4rem;
+            
+        }
+        li{
+            list-style: none;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a :hover{
+            color: #1F232E;
+        }
+        
+
+
+
+
+
+
+
+        .mero-3{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .mero{
+            height: auto;
+            width: 100%;
+            background-color: #1F232E;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            padding-bottom: 10px;
+        }
+        .mero-2{
+            height: 300px;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+
+
+
+
+    .fero{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        float: right;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+        background-color: #1F232E;
+        flex-direction: column;
+    }
+    #ebu{
+        height: 400px;
+        border-radius: 10px 90px 10px 90px;
+        box-shadow: 2px 20px 19px;
+        position: relative;
+        margin-left: 20px;
+        
+    }
+    .fero-2{
+        height:auto;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        gap: 0.7rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .fero-2 h1{
+        font-size: 30px;
+        color: #ea4c89;
+        font-family: poppins, sans-serif;
+    }
+    .fero-2 h3{
+        font-size: 15px;
+        color: white;
+    }
+    .fero-2 p{
+        font-size: 10px;
+        width: 70%;
+    }
+    #ebu{
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 2px 20px 19px;
+        position: relative;
+        
+    }
+    #ok{
+        height: 200px;
+        background-color:#ea4c89;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        top: 70px;
+        display:none;
+
+        
+    }
+    
+    #okay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
+    }
+    .okay a {
+        color: #f6f6f6;
+    }
+    .okay a :hover{
+        color: #1F232E;
+    }
+    box-icon{
+        height: 40px;
+        position: relative;
+        display: flex;
+        width: auto;
+        left: 10px;
+        
+        
+    }
+    #log{
+        
+        height: 150px;
+        width: auto;
+        
+        position: relative;
+        z-index: +1;
+        display: flex;
+    }
+    .nooo{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 30px;
+        bottom: 20px;
+    }
+
+    }
+    </style>
+
+
+</head>
+<body>
+    <section class="hero">
+        <div class="head-2">
+            <div id="head">
+                <header>
+                    <img src="image/logo.png" alt="">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Service">Service</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                    
+                </header>
+                <div class="nooo">
+                    <img id="log" src="image/logo.png" alt="">
+                    <box-icon id="menup" name='list-ul', color="#ea4c89">
+                </box-icon>
+                </div>
+                
+                <div id="ok"> 
+                    <ul id="okay">
+                        <li ><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Service">Service</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ebuka">
+                <div class="ebuka-2">
+                    <h1>Hello its me,</h1>
+                    <h3>Ebuka Joel</h3>
+                    <h1>I'm a <span class="element"></span></h1>
+                    <div>
+                        <a href="https://web.facebook.com/ebuka.joel.351" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/ebukae.joel/" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-dribbble"></a>
+                    </div>
+                    <div id="CV">Download CV</div>
+                </div>
+                <img id="ebuk" src="image/ebuka.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="About" class="fero">
+        <img id="ebu" src="image/ebukas.png" alt="">
+        <div class="fero-2">
+            <h1>About-me</h1>
+            <h3>Front end dev, Designer</h3>
+            <p>
+                Hey there! I'm [Your Name], a passionate professional with a diverse skill set in graphics design, front-end development, and editorial work. With an eye for aesthetics and a love for code, I enjoy crafting captivating experiences and polishing content to perfection. Let's create something extraordinary together!
+            </p>
+        </div>
+        
+    </section>
+
+
+
+
+
+    <section class="mero" id="Service">
+        <h1><span>OUR</span> SERVICE!</h1>
+        <div class="mero-3">
+            <div class="mero-2">
+               <div class="mer">
+                <img src="image/bx-code-alt.png" alt="">
+               
+                <h2>Web development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam est modi libero quos ut similique rem esse quia assumenda earum temporibus ipsa debitis excepturi et, eius quisquam accusantium doloribus!</p>
+                <a href="projects.html"><button><p>Project</p></button></a>
+               </div>
+
+            </div>
+            <div class="mero-2">
+                <div class="mer">
+                    <img src="image/bxs-paint.png" alt="">
+                    <h2>Graphic Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam est modi libero quos ut similique rem esse quia assumenda earum temporibus ipsa debitis excepturi et, eius quisquam accusantium doloribus!</p>
+                    <a href="projects.html"><button><p>Project</p></button></a>
+                </div>
+                
+
+            </div>
+            <div class="mero-2">
+                <div class="mer">
+                    <img src="image/bxl-sketch.png" alt="">
+                    <h2>Ui/ Ux</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam est modi libero quos ut similique rem esse quia assumenda earum temporibus ipsa debitis excepturi et, eius quisquam accusantium doloribus!</p>
+                    <a href="projects.html"><button><p>Project</p></button></a>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="jero" id="Contact">
+        <h1>Contact <span>Me!</span></h1>
+        <form action="">
+            <div>
+            
+                <input type="text", placeholder="First Name">
+                
+                <input type="text", placeholder="Last Name">
+                
+            </div>
+            <div>
+                <input type="number", placeholder="Phone Number">
+                <input type="email", placeholder="Email">
+            </div>
+            <div>
+                <textarea name="Message here!" id="message" cols="50" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="sub" value="Send Messages!">
+            </div>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>Copyright law ©2023</p>
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".element", {
+            strings: ["Front end Dev", "Graphic Designer", "Ui/Ux Designer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+
+
+
+        const menuu = document.getElementById('menup');
+        const ok = document.getElementById('ok');
+        
+
+        menuu.addEventListener('click', () => {
+            if (ok.style.display === 'flex') {
+                ok.style.display = 'none';
+              } else {
+                ok.style.display = 'flex';
+              }
+          });
+      
+          // Close the menu when clicked outside of it
+          document.addEventListener('click', (event) => {
+            if (!ok.contains(event.target) && event.target !== image) {
+              ok.style.display = 'none';
+            }
+          });
+
+    </script>
+</body>
+</html>
